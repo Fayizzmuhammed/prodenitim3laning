@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Brushing Twice a Day but Gums Still Feel Off? Read This First</title>
+<meta name="description" content="Why your mouth's bacteria balance matters, a 30-second self-check, and a look at ProDentim, a chewable oral probiotic with a 60-day refund.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700;800&family=Nunito+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#F5FAFE; --card:#FFFFFF; --navy:#13315C; --ink:#1B2433; --muted:#5B6678; --sky:#DCEEFB;
+  --coral:#FF6B4A; --coral-dk:#E9522F; --line:#DCE6F0; --ok:#1F9D74;
+  box-sizing:border-box; padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#0E1626; --card:#152036; --navy:#A9C8F2; --ink:#E7EDF7; --muted:#9AA8BE; --sky:#1C2C48;
+  --coral:#FF7A5C; --coral-dk:#FF6B4A; --line:#24344F; --ok:#4CC79E;
+}}
+:root[data-theme="dark"]{
+  --bg:#0E1626; --card:#152036; --navy:#A9C8F2; --ink:#E7EDF7; --muted:#9AA8BE; --sky:#1C2C48;
+  --coral:#FF7A5C; --coral-dk:#FF6B4A; --line:#24344F; --ok:#4CC79E;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important;animation:none!important}}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 18px/1.7 "Nunito Sans",system-ui,-apple-system,"Segoe UI",sans-serif}
+h1,h2,h3{font-family:Sora,"Nunito Sans",system-ui,sans-serif;color:var(--navy);line-height:1.15;letter-spacing:-.02em;margin:0 0 .55em}
+h1{font-size:clamp(2rem,5.4vw,3.2rem);font-weight:800}
+h2{font-size:clamp(1.5rem,3.5vw,2.1rem);font-weight:700}
+h3{font-size:1.15rem}
+p{margin:0 0 1.05em}
+.col{max-width:680px;margin:0 auto;padding:0 22px}
+:focus-visible{outline:3px solid var(--coral);outline-offset:3px;border-radius:8px}
+.disc{font-size:.78rem;color:var(--muted);text-align:center;padding:9px 16px;border-bottom:1px solid var(--line)}
+.btn{display:inline-flex;justify-content:center;align-items:center;background:var(--coral);color:#fff;text-decoration:none;font-weight:700;font-size:1.08rem;padding:17px 30px;border-radius:14px;border:0;cursor:pointer;font-family:inherit;box-shadow:0 10px 24px -12px var(--coral);transition:background .15s}
+.btn:hover{background:var(--coral-dk)}
+.btn.full{width:100%}
+
+/* hero: the big tooth mark is the one bold element */
+.hero{padding:48px 0 30px;text-align:center}
+.mark{width:120px;height:120px;margin:0 auto 26px;border-radius:32px;background:var(--sky);display:grid;place-items:center}
+.mark svg{width:64px}
+.hero p.lede{font-size:1.18rem;color:var(--muted)}
+
+.signs{background:var(--card);border:1px solid var(--line);border-radius:22px;padding:26px 28px;margin:30px 0 50px}
+.signs ul{list-style:none;padding:0;margin:0}
+.signs li{padding:10px 0 10px 36px;position:relative;border-bottom:1px solid var(--line)}
+.signs li:last-child{border:0}
+.signs li::before{content:"";position:absolute;left:0;top:16px;width:20px;height:20px;border-radius:50%;border:3px solid var(--coral)}
+
+blockquote{margin:28px 0;padding:6px 0 6px 22px;border-left:5px solid var(--sky);font-family:Sora,sans-serif;font-size:1.3rem;font-weight:600;color:var(--navy);line-height:1.4}
+
+/* quiz */
+.quiz{background:var(--navy);color:#fff;border-radius:26px;padding:32px 28px;margin:46px 0}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .quiz{background:#1B3157}}
+:root[data-theme="dark"] .quiz{background:#1B3157}
+.quiz h2{color:#fff;margin-bottom:6px}
+.quiz .sub{opacity:.8;margin-bottom:22px}
+.prog{height:6px;background:rgba(255,255,255,.18);border-radius:6px;margin-bottom:22px;overflow:hidden}
+.prog i{display:block;height:100%;width:0;background:var(--coral);transition:width .3s}
+.q{font-family:Sora,sans-serif;font-weight:600;font-size:1.2rem;margin-bottom:16px}
+.opts{display:grid;gap:10px}
+.opt{background:rgba(255,255,255,.08);border:2px solid rgba(255,255,255,.18);color:#fff;text-align:left;padding:14px 18px;border-radius:14px;font:600 1rem "Nunito Sans",sans-serif;cursor:pointer}
+.opt:hover{border-color:var(--coral);background:rgba(255,255,255,.12)}
+.result{display:none}
+.result.show{display:block}
+.result h3{color:#fff;font-size:1.4rem}
+.result p{opacity:.9}
+
+.facts{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:26px 0 40px}
+.fact{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:18px;text-align:center}
+.fact b{display:block;font-family:Sora,sans-serif;font-size:1.6rem;color:var(--navy);line-height:1.1}
+.fact span{font-size:.88rem;color:var(--muted)}
+
+.ingr{list-style:none;padding:0;margin:0 0 40px}
+.ingr li{display:grid;grid-template-columns:150px 1fr;gap:16px;padding:14px 0;border-bottom:1px solid var(--line)}
+.ingr b{color:var(--navy)}
+.ingr span{color:var(--muted)}
+
+.offer{background:var(--card);border:2px solid var(--coral);border-radius:26px;padding:30px 26px;margin:20px 0 46px;text-align:center}
+.tiers{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:20px 0 24px}
+.tier{border:1px solid var(--line);border-radius:16px;padding:14px 8px}
+.tier.top{background:var(--sky);border-color:transparent}
+.tier b{display:block;font-family:Sora,sans-serif;font-size:1.7rem;color:var(--navy)}
+.tier span{font-size:.85rem;color:var(--muted)}
+.tier em{display:block;font-style:normal;font-size:.75rem;font-weight:700;color:var(--coral);margin-top:4px}
+.offer .note{font-size:.88rem;color:var(--muted);margin:14px 0 0}
+
+details{border-bottom:1px solid var(--line);padding:15px 0}
+summary{cursor:pointer;font-weight:700;list-style:none;display:flex;justify-content:space-between;gap:14px}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";color:var(--coral);font-size:1.4rem;line-height:1}
+details[open] summary::after{content:"–"}
+details p{margin:10px 0 0;color:var(--muted)}
+
+footer{margin-top:50px;border-top:1px solid var(--line);padding:26px 0 110px;font-size:.78rem;color:var(--muted);line-height:1.6}
+
+.sticky{position:fixed;left:0;right:0;bottom:0;display:none;gap:12px;align-items:center;background:var(--card);border-top:1px solid var(--line);padding:10px 16px calc(10px + env(safe-area-inset-bottom,0px));z-index:10}
+.sticky .t{flex:1;font-size:.85rem;line-height:1.25}
+.sticky .t b{display:block}
+.sticky .btn{padding:12px 18px;font-size:.95rem}
+@media (max-width:640px){
+  .facts{grid-template-columns:1fr}
+  .tiers{grid-template-columns:1fr}
+  .tier.top{order:-1}
+  .ingr li{grid-template-columns:1fr;gap:2px}
+  .sticky{display:flex}
+}
+</style>
+</head>
+<body>
+
+<div class="disc">Advertorial. We may earn a commission if you buy through links on this page, at no extra cost to you.</div>
+
+<main class="col">
+  <header class="hero">
+    <div class="mark" aria-hidden="true">
+      <svg viewBox="0 0 64 70" xmlns="http://www.w3.org/2000/svg"><path d="M32 8c-6-5-15-6-21-1-7 6-6 17-3 26 2 7 3 14 5 22 1 5 7 6 9 1l4-13c1-3 2-4 6-4s5 1 6 4l4 13c2 5 8 4 9-1 2-8 3-15 5-22 3-9 4-20-3-26-6-5-15-4-21 1z" fill="#FF6B4A"/><path d="M22 18c3-2 7-2 10 0" stroke="#fff" stroke-width="3" stroke-linecap="round" fill="none"/></svg>
+    </div>
+    <h1>Brushing twice a day, but your gums and breath still feel off?</h1>
+    <p class="lede">You might be scrubbing the right places while missing the part that matters most: the balance of bacteria living in your mouth.</p>
+  </header>
+
+  <div class="signs">
+    <h3>Sound familiar?</h3>
+    <ul>
+      <li>Your breath goes stale a couple of hours after brushing</li>
+      <li>Your gums look a little puffy or pink when you floss</li>
+      <li>You use strong mouthwash, but the "clean" feeling doesn't last</li>
+      <li>You do everything right and still dread your next check-up</li>
+    </ul>
+  </div>
+
+  <h2>Your mouth is an ecosystem, not a surface</h2>
+  <p>Hundreds of bacterial species live in your mouth. Most are harmless or helpful. When the helpful ones are crowded out, the troublemakers have more room to thrive.</p>
+  <p>That's why researchers have been taking a closer look at the oral microbiome. A 2021 article in <em>Nature</em> covered how this research is challenging some long-held ideas in dentistry.</p>
+  <blockquote>Harsh antibacterial products don't pick sides. They wipe out the good bacteria along with the bad.</blockquote>
+  <p>So a growing number of people are trying a different approach: putting good bacteria back in, and keeping brushing and flossing as they are.</p>
+
+  <section class="quiz" aria-live="polite">
+    <h2>30-second mouth balance check</h2>
+    <p class="sub">Three quick questions. No email required.</p>
+    <div class="prog"><i id="bar"></i></div>
+    <div id="qa">
+      <div class="q" id="qtext"></div>
+      <div class="opts" id="opts"></div>
+    </div>
+    <div class="result" id="result">
+      <h3 id="rtitle"></h3>
+      <p id="rtext"></p>
+      <a class="btn full" href="https://87fb8ruqn92ijdkl5ak7velhb2.hop.clickbank.net" rel="nofollow sponsored noopener" target="_blank">See how ProDentim works</a>
+    </div>
+  </section>
+
+  <h2>Meet ProDentim</h2>
+  <p>ProDentim is a strawberry-mint chewable that dissolves slowly in your mouth. Each tablet delivers probiotic strains chosen for oral health, plus a few supporting ingredients. You chew one every morning, and that's the whole routine.</p>
+
+  <div class="facts">
+    <div class="fact"><b>3.5B</b><span>probiotic CFUs per tablet</span></div>
+    <div class="fact"><b>10 sec</b><span>a day, no water needed</span></div>
+    <div class="fact"><b>60 days</b><span>full money-back window</span></div>
+  </div>
+
+  <h3>What's inside</h3>
+  <ul class="ingr">
+    <li><b>L. paracasei</b><span>A probiotic studied for supporting gum health</span></li>
+    <li><b>B. lactis BL-04®</b><span>Supports a balanced bacterial mix and immune health</span></li>
+    <li><b>L. reuteri</b><span>Supports a calm, healthy mouth environment</span></li>
+    <li><b>Inulin</b><span>Prebiotic fibre that feeds good bacteria</span></li>
+    <li><b>Malic acid</b><span>From strawberries; helps teeth keep their brightness</span></li>
+    <li><b>Tricalcium phosphate</b><span>A calcium source for tooth structure</span></li>
+    <li><b>Peppermint</b><span>Fresh breath and flavour</span></li>
+  </ul>
+
+  <div class="offer" id="offer">
+    <h2>Current offer on the official site</h2>
+    <p style="color:var(--muted);margin:0">Prices per bottle at the time of writing. One bottle lasts 30 days.</p>
+    <div class="tiers">
+      <div class="tier"><span>1 bottle</span><b>$69</b></div>
+      <div class="tier top"><span>6 bottles</span><b>$49</b><em>Best value + 2 bonuses</em></div>
+      <div class="tier"><span>3 bottles</span><b>$59</b><em>+ 2 bonuses</em></div>
+    </div>
+    <a class="btn full" href="https://87fb8ruqn92ijdkl5ak7velhb2.hop.clickbank.net" rel="nofollow sponsored noopener" target="_blank">Check availability on the official site</a>
+    <p class="note">Free US shipping on bundles. Every order is covered by a 60-day refund policy and processed securely by ClickBank.</p>
+  </div>
+
+  <h2>Quick answers</h2>
+  <details><summary>Does this replace brushing or the dentist?</summary><p>No. Keep brushing, flossing and your check-ups. ProDentim is meant to support your routine, not replace it.</p></details>
+  <details><summary>How soon will I notice a difference?</summary><p>It varies. Bacterial balance changes gradually, so most people give it 60 to 90 days.</p></details>
+  <details><summary>Is it safe?</summary><p>The ingredients are widely used and generally considered safe. If you're pregnant, nursing, on medication or have a medical condition, check with your doctor first.</p></details>
+  <details><summary>Where can I buy it?</summary><p>Only on the official website. Copies sold elsewhere aren't covered by the 60-day guarantee.</p></details>
+  <details><summary>What if it doesn't work for me?</summary><p>Contact support within 60 days for a full refund.</p></details>
+
+  <div style="text-align:center;margin-top:40px">
+    <a class="btn" href="https://87fb8ruqn92ijdkl5ak7velhb2.hop.clickbank.net" rel="nofollow sponsored noopener" target="_blank">Visit the official ProDentim site</a>
+  </div>
+
+  <footer>
+    <p><b>Disclosure:</b> This page is an advertorial and contains affiliate links. We may receive a commission if you make a purchase, at no extra cost to you.</p>
+    <p><b>Disclaimer:</b> This content is for general information only and isn't medical or dental advice. These statements have not been evaluated by the Food and Drug Administration. This product is not intended to diagnose, treat, cure or prevent any disease. Individual results vary.</p>
+    <p>ClickBank is the retailer of products on the official site. CLICKBANK® is a registered trademark of Click Sales, Inc. ClickBank's role as retailer does not constitute an endorsement of these products. Prices and offers may change; check the official order page.</p>
+  </footer>
+</main>
+
+<div class="sticky">
+  <div class="t"><b>ProDentim</b>From $49/bottle · 60-day refund</div>
+  <a class="btn" href="https://87fb8ruqn92ijdkl5ak7velhb2.hop.clickbank.net" rel="nofollow sponsored noopener" target="_blank">See offer</a>
+</div>
+
+<script>
+(function(){
+  var Q=[
+    {q:"How long does your breath stay fresh after brushing?",o:[["All day",0],["A few hours",1],["Not long at all",2]]},
+    {q:"Do your gums ever look pink or tender when you floss?",o:[["Never",0],["Sometimes",1],["Often",2]]},
+    {q:"How often do you use strong antibacterial mouthwash?",o:[["Rarely",0],["A few times a week",1],["Daily",2]]}
+  ];
+  var i=0,score=0,qt=document.getElementById('qtext'),op=document.getElementById('opts'),bar=document.getElementById('bar');
+  function render(){
+    bar.style.width=(i/Q.length*100)+'%';
+    qt.textContent=Q[i].q; op.innerHTML='';
+    Q[i].o.forEach(function(a){
+      var b=document.createElement('button');b.className='opt';b.type='button';b.textContent=a[0];
+      b.onclick=function(){score+=a[1];i++; i<Q.length?render():done();};
+      op.appendChild(b);
+    });
+  }
+  function done(){
+    bar.style.width='100%';
+    document.getElementById('qa').style.display='none';
+    var t,p;
+    if(score>=4){t="Your mouth's balance could use support";p="Your answers suggest the good bacteria in your mouth may be under pressure. Adding them back is exactly what ProDentim is designed for. If anything feels painful or keeps bleeding, see your dentist too.";}
+    else if(score>=2){t="You're doing okay, with room to improve";p="Your routine is solid, but a few signs point to a microbiome that could be better balanced. A daily oral probiotic is an easy thing to add.";}
+    else{t="Your mouth seems well balanced";p="Nice work. If you'd like to keep it that way with a little extra support, here's how ProDentim works.";}
+    document.getElementById('rtitle').textContent=t;
+    document.getElementById('rtext').textContent=p;
+    document.getElementById('result').classList.add('show');
+  }
+  render();
+})();
+</script>
+</body>
+</html>
